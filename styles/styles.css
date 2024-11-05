@@ -24,5 +24,16 @@
   .selactSet{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 120px;
+    column-gap: 180px;
+  }
+  .button{
+    background-color: #27AE60;
+    padding:10px 5rem 10px 5rem;
+    border-radius: 25px;
+  }
+
+  @media screen and (max-width:450px){
+    .selactSet{
+      column-gap: 70px;
+    }
   }

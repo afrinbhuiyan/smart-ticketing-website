@@ -178,17 +178,18 @@
              </div>
          </section>
          <!-- set section -->
-         <section class="mt-10 lg:mt-28 mx-3 lg:mx-36">
+        <section class="">
+          <section class="mt-10 lg:mt-28 mx-3 lg:mx-36 lg:flex">
             <!-- select set section -->
-             <div>
+             <div class="flex-1 lg:pr-14">
               <h3 class="text-3xl font-semibold mb-5">Select Your Seat</h3>
               <div class="flex justify-between border-y-2 border-dashed py-5">
                 <p class="flex"><img src="images/seat-gray.png" alt=""> Available</p>
-                <p class="flex"><img src="images/seat-green-filled.png" alt=""> Selected</p>
+                <p class="flex text-[#1DD100]"><img src="images/seat-green-filled.png" alt=""> Selected</p>
               </div>
               <div class="flex justify-end"><button class="btn px-10 mt-5"><img src="images/tabler-icon-steering-wheel.svg" alt=""></button></div>
-              <div class="flex gap-14 mt-8">
-                <div class="">
+              <div class="flex gap-10 lg:gap-20 mt-8">
+                <div class="text-[18px]">
                  <div class="A mb-14">A</div>
                  <div class="B mb-14">B</div>
                  <div class="C mb-14">C</div>
@@ -200,7 +201,7 @@
                  <div class="I mb-14">I</div>
                  <div class="J mb-14">J</div>
                 </div>
-                 <div class="selactSet">
+                 <div class="selactSet text-[18px]">
                    <div class="A1">A1</div>
                    <div class="A2">A2</div>
                    <div class="A3">A3</div>
@@ -246,24 +247,93 @@
              </div>
 
             <!-- select your set section -->
-             <div>
-              <h3 class="text-3xl font-semibold mb-5 border-b-2 border-dashed pb-5">Select Your Seat</h3>
-              <div class="flex justify-between">
-                <p class="">Seat <span class="bg-[#1DD100]">0</span></p>
+             <div class="flex-1 border-l-2 border-dashed pl-1 lg:pl-20 lg:mr-56">
+              <h3 class="text-3xl font-semibold mb-16 border-b-2 border-dashed pb-5">Select Your Seat</h3>
+              <div class="flex justify-between border-b-2 border-dashed pb-3">
+                <p class="">Seat <span class="bg-[#1DD100] text-white px-1 rounded-lg">0</span></p>
                 <p class="">Class</p>
                 <p class="">Price</p>
               </div>
-              <div class="flex justify-between"><h4>C2</h4><p>Economoy</p><h4>550</h4></div>
-              <div class="flex justify-between border-b-2 border-dashed pb-5"><h4>C2</h4><p>Economoy</p><h4>550</h4></div>
+              <div class="flex justify-between mt-5"><h4>C2</h4><p>Economoy</p><h4>550</h4></div>
+              <div class="flex justify-between border-b-2 pb-5 mt-3"><h4>C2</h4><p>Economoy</p><h4>550</h4></div>
               <div class="flex justify-between mt-5">
-              <p>Total Price</p>
-              <p>BDT 1100</p>
+              <p class="pt-serif-bold">Total Price</p>
+              <p class="pt-serif-bold">BDT <span>1100</span></p>
+            </div>
+            <div class="flex justify-between mt-7">
+              <p class="text-[#03071266]">Have any copupon?</p>
+              <button class="btn bg-[#1DD100] text-white">Apply</button>
+            </div>
+            <div class="flex justify-between mt-7">
+              <p class="pt-serif-bold">Grand Total</p>
+              <p class="pt-serif-bold">BDT <span>1100</span></p>
+            </div>
+            <label class="form-control w-full mt-12">
+              <div class="label">
+                <span class=" poppins-extrabold">Passenger Name*</span>
+              </div>
+              <input type="text" placeholder="Enter your name" class="input input-bordered w-full mt-3" />
+            </label>
+            <label class="form-control w-full mt-8">
+              <div class="label">
+                <span class="label-text poppins-extrabold">Phone Number*</span>
+              </div>
+              <input type="text" placeholder="Enter your phone number" class="input input-bordered w-full mt-3" />
+            </label>
+            <label class="form-control w-full mt-8">
+              <div class="label">
+                <span class="label-text poppins-extrabold">Email ID</span>
+              </div>
+              <input type="text" placeholder="Enter your email id" class="input input-bordered w-full mt-3" />
+            </label>
+            <div class="form-control mt-10">
+              <button class="btn text-white text-xl bg-[#1DD100]">Next</button>
+            </div>
+            <div class="flex justify-between mt-5 mx-12">
+              <p class="border-b border-[#03071299] text-[#03071299]">Terms and Conditions</p>
+              <p class="border-b border-[#03071299] text-[#03071299]">Cancellation Policy</p>
             </div>
              </div>
          </section>
+        </section>
+        <!-- success section -->
+         <section class="hidden">
+          <div class="mt-10  bg-[#F2F1F1] py-20 lg:py-56">
+            <div class="flex flex-col justify-center items-center text-center py-10 rounded-2xl mx-2 lg:mx-[40rem] bg-white">
+               <img src="images/success.png" alt="">
+               <h1 class="text-2xl text-[#20AE5C] mt-5 mb-3">success</h1>
+               <p>Thank you for Booking Our Bus Seats. <br> We are working hard to find the best service and deals for you. </p>
+               <p class="text-[#4A4A4A99] mt-3">Shortly you will find a confirmation in your email.</p>
+               <button class="button mt-5 text-white">Continue</button>
+            </div>
+          </div>
+         </section>
     </main>
-    <footer>
-
+    <footer class="bg-black text-white mt-20 p-40">
+         <div class="flex justify-between border-b border-dashed border-[#FFFFFF4D] pb-8">
+          <div>
+            <h1 class="text-4xl poppins-extrabold mb-3">P-Ticket</h1>
+            <p class="text-[#FFFFFFCC]">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+           </div>
+           <div>
+            <h5>Download our app</h5>
+            <div class="flex gap-2 border p-2 rounded-lg mt-3">
+              <div><img src="images/playstore.png" alt=""></div>
+              <div><p class="text-[9px]">GET IN ON</p>
+                <h4>Google Play</h4></div>
+            </div>
+           </div>
+         </div>
+         <div class="flex justify-between mt-16">
+          <div class="text-[#FFFFFFCC]">
+             <h3>@all rights reserved, P-Ticket services limited.2024</h3>
+          </div>
+          <div class=" flex gap-9">
+             <p class="">Terms & condition</p>
+             <p class="">Return & refund policy</p>
+             <p class="">Privacy policy</p>
+          </div>
+         </div>
     </footer>
 
     <script src="scripts/ticketing.js"></script>
