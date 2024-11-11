@@ -24,12 +24,28 @@
   .selactSet{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 180px;
+    column-gap: 100px;
+    row-gap: 30px;
   }
   .button{
     background-color: #27AE60;
     padding:10px 5rem 10px 5rem;
     border-radius: 25px;
+  }
+
+  .selected-ticket{
+    background-color: #1DD100;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  #economoy{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .rounded-lg{
+    cursor: pointer;
   }
 
   @media screen and (max-width:450px){
